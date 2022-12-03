@@ -1,0 +1,24 @@
+spring:
+#  datasource:
+#    url: jdbc:postgresql://localhost:5432/hsc-wechat-common
+#    username: postgres
+#    password: 123456
+#    driver-class-name: org.postgresql.Driver
+#    hikari:
+#      maximum-pool-size: 50
+#  jpa:
+#    hibernate:
+#      ddl-auto: update  # 第一次建表create 后面用update 要不然每次重启都会新建表
+#    show-sql: true
+#    database-platform:
+#      org.hibernate.dialect.PostgreSQLDialect
+  redis:
+    host: localhost
+    password:
+    port: 6379
+
+#wechat:
+#  base-url: https://api.weixin.qq.com
+#  access-token: https://api.weixin.qq.com/cgi-bin/token?grant_type=client_credential
+#  phone-number-key: 12345678abcdefgh
+#  phone-number-iv: aabbccddeeffgghh

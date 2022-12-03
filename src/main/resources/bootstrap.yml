@@ -1,0 +1,12 @@
+spring:
+  profiles:
+    active: dev
+  jackson:
+    default-property-inclusion: NON_NULL
+  cloud:
+    config:
+      enabled: false
+#      uri: https://d2c-config-service-stage.cn1.philips-healthsuite.com.cn/
+#      name: hsc-wechat-common-service
+#      username: ${username}
+#      password: ${password}
