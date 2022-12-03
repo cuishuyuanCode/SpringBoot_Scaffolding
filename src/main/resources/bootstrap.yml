@@ -6,7 +6,3 @@ spring:
   cloud:
     config:
       enabled: false
-#      uri: https://d2c-config-service-stage.cn1.philips-healthsuite.com.cn/
-#      name: hsc-wechat-common-service
-#      username: ${username}
-#      password: ${password}

@@ -1,20 +1,3 @@
-/****************************************************************************
- *
- *                   Health Suite China
- *                © Koninklijke Philips N.V., 2019.
- *
- * All rights are reserved. Reproduction or dissemination
- * in whole or in part is prohibited without the written
- * consent of the copyright owner.
- *
- *
- * FILE NAME: RedisConfig.java
- *
- * CREATED: Oct 31, 2019 8:56:48 PM
- *
- * ORIGINAL AUTHOR(S): qixiao
- *
- ***************************************************************************/
 package com.csy.demo.config;
 
 import org.springframework.beans.factory.annotation.Autowired;
