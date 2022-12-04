@@ -10,6 +10,6 @@ import org.apache.ibatis.annotations.Select;
 public interface DemoMapper {
 
 
-    @Select("select id from demo where id = #{id}")
+    @Select("select id from user where id = #{id}")
     String selectById(@Param("id") String id);
 }

@@ -1,7 +1,6 @@
 package com.csy.demo.web.controller;
 
 
-import com.csy.demo.response.Result;
 import com.csy.demo.service.DemoService;
 import com.csy.demo.web.dto.DemoDTO;
 import com.csy.demo.web.vo.DemoVo;
@@ -14,7 +13,7 @@ import org.springframework.web.bind.annotation.RestController;
 import javax.annotation.Resource;
 
 @RestController
-@RequestMapping("/demo")
+@RequestMapping("demo")
 public class DemoController {
 
     @Resource
@@ -23,5 +22,10 @@ public class DemoController {
     @PostMapping("/test")
     public ResponseEntity<DemoVo> demo(@RequestBody DemoDTO demoDTO){
         return ResponseEntity.ok(demoService.testDemo(demoDTO));
+    }
+
+    @PostMapping("/test1")
+    public void test1(String id){
+        System.out.println("1");
     }
 }

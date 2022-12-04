@@ -25,6 +25,7 @@ public class DemoServiceImpl implements DemoService {
         String id = demoMapper.selectById(demoDTO.getId());
         DemoVo demoVo = new DemoVo();
         demoVo.setId(id);
+        log.info("返回的信息为:{}",JSONObject.toJSONString(demoVo));
         return demoVo;
     }
 }
