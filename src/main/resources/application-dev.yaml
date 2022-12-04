@@ -1,11 +1,11 @@
 spring:
-#  datasource:
-#    url: jdbc:postgresql://localhost:5432/hsc-wechat-common
-#    username: postgres
-#    password: 123456
-#    driver-class-name: org.postgresql.Driver
-#    hikari:
-#      maximum-pool-size: 50
+  datasource:
+    url: jdbc:mysql://localhost:5432/demo
+    username: admin
+    password: admin
+    driver-class-name: org.gjt.mm.mysql.Driver
+    hikari:
+      maximum-pool-size: 50
   redis:
     host: localhost
     password:

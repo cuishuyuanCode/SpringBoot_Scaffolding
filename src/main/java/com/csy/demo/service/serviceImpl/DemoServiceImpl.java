@@ -1,7 +1,7 @@
 package com.csy.demo.service.serviceImpl;
 
 import com.alibaba.fastjson.JSONObject;
-import com.csy.demo.dao.DemoDao;
+import com.csy.demo.mapper.DemoMapper;
 import com.csy.demo.service.DemoService;
 import com.csy.demo.web.dto.DemoDTO;
 import com.csy.demo.web.vo.DemoVo;
@@ -17,12 +17,12 @@ public class DemoServiceImpl implements DemoService {
 
 
     @Resource
-    private DemoDao demoDao;
+    private DemoMapper demoMapper;
 
     @Override
     public DemoVo testDemo(DemoDTO demoDTO) {
         log.info("传入参数:{}", JSONObject.toJSONString(demoDTO));
-        String id = demoDao.selectById(demoDTO.getId());
+        String id = demoMapper.selectById(demoDTO.getId());
         DemoVo demoVo = new DemoVo();
         demoVo.setId(id);
         return demoVo;
