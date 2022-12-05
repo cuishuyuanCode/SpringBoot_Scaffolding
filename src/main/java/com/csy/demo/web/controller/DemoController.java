@@ -27,6 +27,6 @@ public class DemoController {
     @PostMapping("/test1")
     public void test1(String id){
         System.out.println("1");
-        System.out.println("lueluelue");
+        System.out.println("lueluelue?");
     }
 }
