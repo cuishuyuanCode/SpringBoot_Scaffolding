@@ -23,9 +23,4 @@ public class DemoController {
     public ResponseEntity<DemoVo> demo(@RequestBody DemoDTO demoDTO){
         return ResponseEntity.ok(demoService.testDemo(demoDTO));
     }
-
-    @PostMapping("/test1")
-    public void test1(String id){
-        System.out.println("1");
-    }
 }
